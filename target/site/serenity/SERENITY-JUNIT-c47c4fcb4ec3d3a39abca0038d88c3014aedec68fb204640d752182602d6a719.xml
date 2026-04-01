@@ -1,1 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Play video" skipped="1" tests="1" time="0.04" timestamp="2026-03-30 08:15:21"><testcase name="Play video successful"><skipped/></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Play video" skipped="1" tests="1" time="0.58" timestamp="2026-04-01 07:58:43"><testcase name="Play video successful"><compromised message="Environment 'environments.qa.webdriver.base.url' property undefined for environment '[]'" type="net.serenitybdd.model.environment.UndefinedEnvironmentVariableException">Environment 'environments.qa.webdriver.base.url' property undefined for environment '[]'</compromised><system-err>Environment 'environments.qa.webdriver.base.url' property undefined for environment '[]'
+net.serenitybdd.model.environment.EnvironmentSpecificConfiguration.lambda$getProperty$11(EnvironmentSpecificConfiguration.java:196)
+net.serenitybdd.model.environment.EnvironmentSpecificConfiguration.getProperty(EnvironmentSpecificConfiguration.java:192)
+com.youtube.stepDefinitions.PlaySongStepDefinition.userOpenTheBrowser(PlaySongStepDefinition.java:19)
+✽.user open the browser(file:///Users/carlosjavier/Code%20projects/IdeaProjects/youtube_e2t_aut/src/test/resources/features/play_song.feature:6)
+</system-err></testcase></testsuite>

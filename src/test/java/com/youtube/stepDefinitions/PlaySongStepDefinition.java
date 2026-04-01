@@ -1,15 +1,34 @@
 package com.youtube.stepDefinitions;
 
+import com.youtube.tasks.SendNameVideoTask;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import net.serenitybdd.model.environment.EnvironmentSpecificConfiguration;
+import net.serenitybdd.screenplay.actions.Open;
+import net.thucydides.model.util.EnvironmentVariables;
+
+import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class PlaySongStepDefinition {
+
+    private EnvironmentVariables env;
+
     @Given("user open the browser")
     public void userOpenTheBrowser() {
+        /*String webUrl = EnvironmentSpecificConfiguration.from(env)
+                .getProperty("environments.qa.webdriver.base.url");
+        String url= webUrl.toString();
+        */
+
+        theActorInTheSpotlight().wasAbleTo(Open.url("https://youtube.com"));
+
     }
     @When("user send the video name")
     public void userSendTheVideoName() {
+        theActorInTheSpotlight().attemptsTo(
+                SendNameVideoTask.forSearch()
+        );
     }
     @When("user click on video")
     public void userClickOnVideo() {
