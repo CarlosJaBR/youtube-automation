@@ -10,7 +10,7 @@ public class ValidatePlayVideo implements Question {
     public Object answeredBy(Actor actor) {
         return LBL_NAMEVIDEO.resolveFor(actor).isVisible();
     }
-    public static ValidatePlayVideo validatePlayVideo(){
+    public static ValidatePlayVideo isVisible(){
         return new ValidatePlayVideo();
     }
 }

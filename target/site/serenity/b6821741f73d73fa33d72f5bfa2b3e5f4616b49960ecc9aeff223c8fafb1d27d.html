@@ -153,10 +153,13 @@
 
 <div class="middlecontent">
 
+
     <div id="contenttop">
         <div class="middlebg">
         <span class="breadcrumbs"><a href="index.html">Home</a>
-                > Feature 
+                > Duration 
+                > <span
+                    class="truncate-60">10 To 30 Seconds > Duration 10 To 30 Seconds</span>
         </span>
         </div>
         <div class="rightbg"></div>
@@ -185,7 +188,7 @@
         <div class="middlb">
             <div class="table">
 
-                <h2>Test Results: All Tests</h2>
+                <h2><i class='bi bi-tags'></i> Duration: 10 To 30 Seconds > Duration 10 To 30 Seconds</h2>
                 <table class='overview'>
                     <tr>
                         <td width="375px" valign="top">
@@ -195,7 +198,7 @@
                                     1 test
 
                                      |
-                                        <a href="fb2f63976dd34766ab6955646fad304cede2d6ba3a653d7869f38445a062db89.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down" title="Download CSV"></i></a>
+                                        <a href="c42bdbaffb73d4b3c9f8e06d9bcf7d7c5ebefc9edff09a25c090639a65e6d82c.csv" title="Download CSV"> <i class="bi bi-cloud-arrow-down" title="Download CSV"></i></a>
 
                                     <p class="report-info"><i class="bi bi-info-circle"></i> Note that results include
                                         data-driven scenarios containing test ,
@@ -501,14 +504,14 @@
 
         // Options define for display value on top of bars
         const outcomeDetailsReports = [
-            { title: 'Passing Test Cases', link: "92b818c1e61461fcedf4a609f8328583aa28f0e5259bfc3bd49d5a4957dbacc1.html" },
-            { title: 'Pending Test Cases', link: "e4246bf0c66027635195c7ebe4495f20bf7de3e07513c3f8368eb54f8f5ff5c9.html" },
-            { title: 'Ignored Test Cases', link: "9db0426d79e267c0b8471292cd66ef6840e4b3ac4ebcf1298d035f2682f74fa3.html" },
-            { title: 'Skipped Test Cases', link: "53966fa3590c0047afc9a6a18e507e44e83fed3142d244558e0f8dbdfa66c897.html" },
-            { title: 'Aborted Test Cases',  link: "f1c43547465a1b240179ed7640e3ec94f346f12e6063e901340eeb9762cc6cca.html"},
-            { title: 'Failed Test Cases', link: "34af80f84c8868d69e55201455ca8a43791cb6ef79f94ce8e24576a0e0a2fd6c.html"  },
-            { title: 'Broken Test Cases', link: "4ed6965b2d12bea56ecc2629ef0f90115e5dfff319e0e66a2200702d22a2887f.html"    },
-            { title: 'Compromised Test Cases',  link: "739198f1e9218f474fc7d5157d8303289bee868487401952907db8f07b067c10.html" },
+            { title: 'Passing Test Cases', link: "310728536d740903b3d8796fef23573179061b5a912bbd4c39eb8140a6759deb.html" },
+            { title: 'Pending Test Cases', link: "ba239354e546ef7be3dd5766de91d939174c4dca903a44c47f5b3339c903753e.html" },
+            { title: 'Ignored Test Cases', link: "9990f409efa07b174570ce7d7635b7b417c4b5405d2d8855a6d1e36aa7400358.html" },
+            { title: 'Skipped Test Cases', link: "ef32f5e7fd7ab07ceb1710c38e4f97e92604c025585602ea2b9dc416ae3854fe.html" },
+            { title: 'Aborted Test Cases',  link: "3c5bb5bdcc62bcfa316201cf721fda4b06a0a97500358f8df7e8a11040f19376.html"},
+            { title: 'Failed Test Cases', link: "4e233aa8ab734f575d2a713abb721cd10fe32a00d311155e60778278fbbadc09.html"  },
+            { title: 'Broken Test Cases', link: "8258655ee7b842a15db290322eb548afb2cdbfbdb1f2df2b3f92307f9469e93a.html"    },
+            { title: 'Compromised Test Cases',  link: "2f2e548641fa8695684b276e96d56c30fa54a8bf4f8a4fe24286786ce3b9478e.html" },
         ]
         const outcomeData = {
             labels: ['Passing Test Cases', 'Pending Test Cases', 'Ignored Test Cases', 'Skipped Test Cases', 'Aborted Test Cases', 'Failed Test Cases', 'Broken Test Cases', 'Compromised Test Cases','Undefined Test Cases'],
@@ -597,14 +600,14 @@
         // Options define for display value on top of bars
 
         const severityDetailsReports = [
-            { title: 'Passing Scenarios', link: "92b818c1e61461fcedf4a609f8328583aa28f0e5259bfc3bd49d5a4957dbacc1.html" },
-            { title: 'Pending Scenarios', link: "e4246bf0c66027635195c7ebe4495f20bf7de3e07513c3f8368eb54f8f5ff5c9.html" },
-            { title: 'Ignored Scenarios', link: "9db0426d79e267c0b8471292cd66ef6840e4b3ac4ebcf1298d035f2682f74fa3.html" },
-            { title: 'Skipped Scenarios', link: "53966fa3590c0047afc9a6a18e507e44e83fed3142d244558e0f8dbdfa66c897.html" },
-            { title: 'Aborted Scenarios',  link: "f1c43547465a1b240179ed7640e3ec94f346f12e6063e901340eeb9762cc6cca.html"},
-            { title: 'Failed Scenarios', link: "34af80f84c8868d69e55201455ca8a43791cb6ef79f94ce8e24576a0e0a2fd6c.html"  },
-            { title: 'Broken Scenarios', link: "4ed6965b2d12bea56ecc2629ef0f90115e5dfff319e0e66a2200702d22a2887f.html"    },
-            { title: 'Compromised Scenarios',  link: "739198f1e9218f474fc7d5157d8303289bee868487401952907db8f07b067c10.html" },
+            { title: 'Passing Scenarios', link: "310728536d740903b3d8796fef23573179061b5a912bbd4c39eb8140a6759deb.html" },
+            { title: 'Pending Scenarios', link: "ba239354e546ef7be3dd5766de91d939174c4dca903a44c47f5b3339c903753e.html" },
+            { title: 'Ignored Scenarios', link: "9990f409efa07b174570ce7d7635b7b417c4b5405d2d8855a6d1e36aa7400358.html" },
+            { title: 'Skipped Scenarios', link: "ef32f5e7fd7ab07ceb1710c38e4f97e92604c025585602ea2b9dc416ae3854fe.html" },
+            { title: 'Aborted Scenarios',  link: "3c5bb5bdcc62bcfa316201cf721fda4b06a0a97500358f8df7e8a11040f19376.html"},
+            { title: 'Failed Scenarios', link: "4e233aa8ab734f575d2a713abb721cd10fe32a00d311155e60778278fbbadc09.html"  },
+            { title: 'Broken Scenarios', link: "8258655ee7b842a15db290322eb548afb2cdbfbdb1f2df2b3f92307f9469e93a.html"    },
+            { title: 'Compromised Scenarios',  link: "2f2e548641fa8695684b276e96d56c30fa54a8bf4f8a4fe24286786ce3b9478e.html" },
         ]
         const severityData = {
             labels: ['Passing', 'Pending', 'Ignored', 'Skipped', 'Aborted', 'Failed', 'Broken', 'Compromised'],
@@ -675,14 +678,14 @@
 
         // Options define for display value on top of bars
         const durationDetailsReports = [
-                {title: "Under 1 second", link: "c509ce1c5814985f41f0e3052ec4b0a0ceeb3c107a67a85405f2b7778e95bb32.html"},
-                {title: "1 to 10 seconds", link: "8cd8dcb565352ba71c97c32a3396ea45acc6166314e33953901ca40354e2984b.html"},
-                {title: "10 to 30 seconds", link: "17cf532151b60cf3b858affe37bad4a3271b0ea41bb70461bdcd3e3d87fbabe0.html"},
-                {title: "30 to 60 seconds", link: "14fed1f4996094db5474de3a3a958ef6119ffc4095b79990fdb5173b58cf84b0.html"},
-                {title: "1 to 2 minutes", link: "8022e4b5b84a7b5210319a56cc3c3bbaaa11009d38fa39883819e1b86f1544d6.html"},
-                {title: "2 to 5 minutes", link: "47af02ced91095810c1ece32243513338ebf79b5062d7a8dffc87da5d9021a44.html"},
-                {title: "5 to 10 minutes", link: "ae4c0b2ed847e76f1f0e74be966c83c6ba71d4c3fbc54f6340b089b92fc02562.html"},
-                {title: "10 minutes or over", link: "9253be0e8785009bd174cf9265ddb17ec02662f1dbbd715bb10a49a741535c97.html"},
+                {title: "Under 1 second", link: "e394062c3ab25a216f4a06beb45e8764adcb44ff53b3f08f150a9aed307ebad2.html"},
+                {title: "1 to 10 seconds", link: "e3d1bc1cc1b8143b8f588ad0070a53f839f9fc96927eac78652b08386c0eb9ae.html"},
+                {title: "10 to 30 seconds", link: "b6821741f73d73fa33d72f5bfa2b3e5f4616b49960ecc9aeff223c8fafb1d27d.html"},
+                {title: "30 to 60 seconds", link: "6eea64e35df7852e6783e2bac5bebf3d7a7577b0733d9515c0177be80ea064c6.html"},
+                {title: "1 to 2 minutes", link: "b4c0a5cca81c2251a13e8992fdeceb31d347a9a3ee3eb44171ffde1d78085db1.html"},
+                {title: "2 to 5 minutes", link: "1e025bc750f6ca94ee2ded1af91cd01f76166713afa925124747190d2dbd2407.html"},
+                {title: "5 to 10 minutes", link: "9dd841a6aa7040d9a48530cfbff06ab1f983d7538a9c74acc84bbc4fe3293358.html"},
+                {title: "10 minutes or over", link: "f9adf9b852ff6917a497277a1ed64c751ebc0c33ed8fe3060ef61186fa104d24.html"},
         ]
         // The Severity bar chart
         const durationChartCtx = document.getElementById('durationChart');

@@ -1,5 +1,6 @@
 package com.youtube.stepDefinitions;
 
+import com.youtube.questions.ValidatePlayVideo;
 import com.youtube.tasks.ClickOnSearchTask;
 import com.youtube.tasks.ClickOnVideoTask;
 import com.youtube.tasks.OpenBrowserTask;
@@ -9,6 +10,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.model.util.EnvironmentVariables;
 
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class PlaySongStepDefinition {
@@ -36,6 +38,12 @@ public class PlaySongStepDefinition {
     }
     @Then("user can see the title video")
     public void userCanSeeTheTitleVideo() {
+        theActorInTheSpotlight().should(
+                seeThat(
+                        "El titutlo del video es visible",
+                        ValidatePlayVideo.isVisible()
+                )
+        );
     }
 
 }
