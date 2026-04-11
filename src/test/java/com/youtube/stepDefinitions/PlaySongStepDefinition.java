@@ -1,5 +1,6 @@
 package com.youtube.stepDefinitions;
 
+import com.youtube.tasks.OpenBrowserTask;
 import com.youtube.tasks.SendNameVideoTask;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -15,13 +16,9 @@ public class PlaySongStepDefinition {
 
     @Given("user open the browser")
     public void userOpenTheBrowser() {
-        /*String webUrl = EnvironmentSpecificConfiguration.from(env)
-                .getProperty("environments.qa.webdriver.base.url");
-        String url= webUrl.toString();
-        */
-
-        theActorInTheSpotlight().wasAbleTo(Open.url("https://youtube.com"));
-
+        theActorInTheSpotlight().wasAbleTo(
+                OpenBrowserTask.openBrowser()
+        );
     }
     @When("user send the video name")
     public void userSendTheVideoName() {
