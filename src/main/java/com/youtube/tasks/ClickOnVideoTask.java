@@ -15,6 +15,7 @@ public class ClickOnVideoTask implements Task {
     public <T extends Actor> void performAs(T t) {
         ArrayList<WebElementFacade> listVideos = LIST_TITTLEVIDEO.resolveAllFor(t);
         WebElementFacade video = listVideos.get(0);
+        String tittle = video.getText();
         t.attemptsTo(
                 Click.on(video)
         );
