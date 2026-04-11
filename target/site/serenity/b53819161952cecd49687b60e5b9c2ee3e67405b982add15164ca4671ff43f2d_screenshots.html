@@ -152,7 +152,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 10-04-2026 20:48</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 10-04-2026 21:20</span>
     <br style="clear:left"/>
 </div>
 
@@ -218,9 +218,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Play video successful
+                                <span class="error-color">Play video successful
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -237,6 +237,42 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Index out of bounds exception: Index 0 out of bounds for length 0</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.IndexOutOfBoundsException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.youtube.tasks.ClickOnVideoTask.performAs(ClickOnVideoTask.java:17)<br />net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)<br />net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)<br />net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)<br />net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)<br />net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)<br />net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)<br />com.youtube.stepDefinitions.PlaySongStepDefinition.userClickOnVideo(PlaySongStepDefinition.java:32)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:56)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:84)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:75)<br />io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)<br />io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)<br />io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)<br />io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)<br />io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:330)<br />io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:51)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                    <div class="panel-body">
+                        <a href="pagesource8368176635339922081.html" target="_blank" class="btn btn-info">HTML Source</a>
+                    </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="0baad589e87d2151c64b18af5ec770f0a0f209a740b8470221c8561ae58f4702.png" title=" Given user open the browser" width="0"/>
@@ -249,13 +285,13 @@
                 <img src="1a3aaa73e7a4bb4c674648e5b9ec3303020537d1cfd4ce1630dcd121157a4d6e.png" title=" user enters 'Java' into search bar" width="0"/>
                 <img src="1a3aaa73e7a4bb4c674648e5b9ec3303020537d1cfd4ce1630dcd121157a4d6e.png" title=" User send name video task (completed)" width="0"/>
                 <img src="1a3aaa73e7a4bb4c674648e5b9ec3303020537d1cfd4ce1630dcd121157a4d6e.png" title=" When user send the video name (completed)" width="0"/>
-                <img src="ef427b463074b11e434b6df6f24a942fe50be182990776116f1cb079910cfcb0.png" title=" And user click on video" width="0"/>
-                <img src="ef427b463074b11e434b6df6f24a942fe50be182990776116f1cb079910cfcb0.png" title=" User click on search task" width="0"/>
-                <img src="ef427b463074b11e434b6df6f24a942fe50be182990776116f1cb079910cfcb0.png" title=" user clicks on button search" width="0"/>
-                <img src="ef427b463074b11e434b6df6f24a942fe50be182990776116f1cb079910cfcb0.png" title=" User click on search task (completed)" width="0"/>
-                <img src="ef427b463074b11e434b6df6f24a942fe50be182990776116f1cb079910cfcb0.png" title=" And user click on video (completed)" width="0"/>
+                <img src="1a3aaa73e7a4bb4c674648e5b9ec3303020537d1cfd4ce1630dcd121157a4d6e.png" title=" And user click on video" width="0"/>
+                <img src="cfc69112a94ae2933aab9a16d68d36fa1631bac7b743ba1d098f0db94791314d.png" title=" User click on search task" width="0"/>
+                <img src="cfc69112a94ae2933aab9a16d68d36fa1631bac7b743ba1d098f0db94791314d.png" title=" user clicks on button search" width="0"/>
+                <img src="cfc69112a94ae2933aab9a16d68d36fa1631bac7b743ba1d098f0db94791314d.png" title=" User click on search task (completed)" width="0"/>
+                <img src="cfc69112a94ae2933aab9a16d68d36fa1631bac7b743ba1d098f0db94791314d.png" title=" User click on video task" width="0"/>
 
-                <img src="ef427b463074b11e434b6df6f24a942fe50be182990776116f1cb079910cfcb0.png" title=" Then user can see the title video: <span class='success-color'>SUCCESS</span>" width="0"/>
+                <img src="5b84f5fa821d9c046173d9ed58bc94dbb24bfe7d90734bce7efda20e8ce6f09d.png" title=" User click on video task (completed): <span class='error-color'>ERROR</span>" width="0"/>
             </div>
         </div>
 

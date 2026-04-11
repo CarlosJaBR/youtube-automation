@@ -1,7 +1,5 @@
 package com.youtube.tasks;
 
-import com.youtube.ui.ViewVideoUI;
-import net.serenitybdd.core.pages.ListOfWebElementFacades;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;

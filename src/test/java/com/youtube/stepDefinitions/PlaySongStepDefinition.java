@@ -1,6 +1,7 @@
 package com.youtube.stepDefinitions;
 
 import com.youtube.tasks.ClickOnSearchTask;
+import com.youtube.tasks.ClickOnVideoTask;
 import com.youtube.tasks.OpenBrowserTask;
 import com.youtube.tasks.SendNameVideoTask;
 import io.cucumber.java.en.Given;
@@ -29,7 +30,8 @@ public class PlaySongStepDefinition {
     @When("user click on video")
     public void userClickOnVideo() {
         theActorInTheSpotlight().attemptsTo(
-                ClickOnSearchTask.clickOnSearch()
+                ClickOnSearchTask.clickOnSearch(),
+                ClickOnVideoTask.clickOnVideo()
         );
     }
     @Then("user can see the title video")
