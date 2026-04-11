@@ -4,7 +4,6 @@ import com.youtube.tasks.SendNameVideoTask;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import net.serenitybdd.model.environment.EnvironmentSpecificConfiguration;
 import net.serenitybdd.screenplay.actions.Open;
 import net.thucydides.model.util.EnvironmentVariables;
 
