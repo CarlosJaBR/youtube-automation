@@ -5,7 +5,6 @@ import com.youtube.tasks.SendNameVideoTask;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import net.serenitybdd.screenplay.actions.Open;
 import net.thucydides.model.util.EnvironmentVariables;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
@@ -28,6 +27,7 @@ public class PlaySongStepDefinition {
     }
     @When("user click on video")
     public void userClickOnVideo() {
+
     }
     @Then("user can see the title video")
     public void userCanSeeTheTitleVideo() {
