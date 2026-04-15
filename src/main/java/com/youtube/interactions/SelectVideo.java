@@ -15,9 +15,18 @@ public class SelectVideo implements Interaction {
     @Override
     public <T extends Actor> void performAs(T t) {
         ArrayList<WebElementFacade> listVideos = LIST_TITTLEVIDEO.resolveAllFor(t);
+        ArrayList<WebElementFacade> filteredVideos = new ArrayList<>();
+
+        for(int i = 0; i < listVideos.size(); i++) {
+
+            if((listVideos.get(i).getText().contains("Luis Fonsi"))){
+                filteredVideos.add(listVideos.get(i));
+            }
+        }
+
         Random random = new Random();
-        int indexVideo = random.nextInt(listVideos.size());
-        WebElementFacade video = listVideos.get(indexVideo);
+        int indexVideo = random.nextInt(filteredVideos.size());
+        WebElementFacade video = filteredVideos.get(indexVideo);
         t.attemptsTo(
                 Click.on(video)
         );

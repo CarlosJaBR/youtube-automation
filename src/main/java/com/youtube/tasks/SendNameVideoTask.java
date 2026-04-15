@@ -12,7 +12,7 @@ public class SendNameVideoTask implements Task {
     @Override
     public <T extends Actor> void performAs(T t) {
         t.attemptsTo(
-                Enter.theValue("Java").into(TXT_SEARCH)
+                Enter.theValue("Despacito").into(TXT_SEARCH)
         );
     }
     public static SendNameVideoTask forSearch(){
