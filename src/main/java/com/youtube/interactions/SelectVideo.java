@@ -16,7 +16,9 @@ public class SelectVideo implements Interaction {
     public <T extends Actor> void performAs(T t) {
         ArrayList<WebElementFacade> listVideos = LIST_TITTLEVIDEO.resolveAllFor(t);
         WebElementFacade video = listVideos.get(0);
-        Click.on(video);
+        t.attemptsTo(
+                Click.on(video)
+        );
     }
 
     public static SelectVideo getVideo(){
